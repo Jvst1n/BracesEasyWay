@@ -1,0 +1,83 @@
+{
+  "name": "braces-easy-way",
+  "version": "1.0.0",
+  "description": "Find the best dental service around",
+  "main": "server.js",
+  "scripts": {
+    "compile": "webpack -w ",
+    "start": "node ./public/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jvst1n/BracesEasyWay.git"
+  },
+  "keywords": [
+    "dental",
+    "braces"
+  ],
+  "author": "Hoang Mai",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "@quickbaseoss/babel-plugin-styled-components-css-namespace",
+      [
+        "babel-plugin-styled-components",
+        {
+          "ssr": true,
+          "displayName": true,
+          "preprocess": false,
+          "minify": true
+        }
+      ],
+      "transform-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "ajv": "^6.0.0",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "google-distance-matrix": "^1.1.1",
+    "mongodb": "^3.0.3",
+    "multer": "^1.3.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-images": "^0.5.17",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.0-rc.3",
+    "reactstrap": "^6.0.1",
+    "redux": "^4.0.0",
+    "serialize-javascript": "^1.5.0",
+    "styled-components": "^3.2.6",
+    "styled-reset": "^1.3.5"
+  },
+  "devDependencies": {
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "0.0.10",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "isomorphic-style-loader": "^4.0.0",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.3",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
